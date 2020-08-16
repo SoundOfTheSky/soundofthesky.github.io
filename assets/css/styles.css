@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: Mulish;
+}
+@font-face {
+  font-family: Mulish;
+  src: url(../fonts/Mulish-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+.journey {
+  height: 100%;
+  width: 100%;
+}
+.journey .main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+.journey .main .im {
+  animation: rollout 1500ms forwards;
+  position: absolute;
+  height: 100%;
+  filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.3));
+}
+.journey .main .text {
+  width: 40%;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  color: #fff;
+  font-size: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  animation: opacity 2s 1s forwards;
+  opacity: 0;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rollout {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: -150px;
+  }
+}

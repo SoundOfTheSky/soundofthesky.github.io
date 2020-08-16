@@ -1,0 +1,49 @@
+.loading-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  margin: 0 auto;
+  background: #252526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-overlay .box {
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+  background: white;
+}
+.loading-overlay .box div:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: -100vw;
+  width: 120vw;
+  height: 1vw;
+  background: #1ca2ff;
+}
+.loading-overlay .box div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1vw;
+  height: 120vw;
+  background: #1ca2ff;
+}
+.loading-overlay .box div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120vw;
+  height: 1vw;
+  background: #1ca2ff;
+}
+.loading-overlay .box div:nth-child(4) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1vw;
+  height: 120vw;
+  background: #1ca2ff;
+}
