@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #c4edf3;
+}
+body > div {
+  width: 100%;
+  height: 100%;
+  color: #14607d;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+*::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.header {
+  height: 48px;
+  width: 90%;
+  border-radius: 0 0 20px 20px;
+  background: #6ad3d9;
+  margin: 0 auto;
+  box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.75);
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .avatar {
+  
+  padding: 4px;
+  width: 48px;
+}
+.header .avatar img {
+  border-radius: 50%;
+}
+.header img {
+  height: 100%;
+}
+.content {
+  display: flex;
+  padding: 16px 5% 0 5%;
+}
+.timerBox {
+  width: 50%;
+  height: 80vh;
+  padding-right: 16px;
+}
+.timerBox .title {
+  font-size: 48px;
+  padding: 16px 0;
+}
+.timerBox .timer {
+  height: 60%;
+  border: 16px solid #6ad3d9;
+  display: flex;
+  background: #fff;
+}
+.timerBox .timer > div {
+  font-size: 192px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.timerBox .timer > div:nth-child(2) {
+  border-left: 16px solid #6ad3d9;
+  border-right: 16px solid #6ad3d9;
+}
+.assignments {
+  width: 50%;
+  min-height: 100%;
+  max-height: 100%;
+  background: #fff;
+  overflow-y: scroll;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 16px;
+}
+.assignment {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+.assignment img {
+  width: 100%;
+  height: 700px;
+  transition: 0.5s;
+}
+.assignment img:hover {
+  opacity: 0;
+}
+.assignment img:last-child {
+  position: absolute;
+  left: 0;
+}
+@media screen and (max-width: 500px) {
+
+}
