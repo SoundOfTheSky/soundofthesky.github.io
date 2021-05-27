@@ -1,10 +1,10 @@
 const time = document.querySelector('.time');
 const veigar = document.querySelector('.veigar');
-const subtext= document.querySelector('.subtext');
+const title= document.querySelector('.title');
 const a = document.querySelector('.a');
 veigar.style.bottom = '0px';
 veigar.style.left = '10px';
-const deadline = new Date('6.1.2021').getTime();
+const deadline = new Date('6.1.2020').getTime();
 //const deadline = new Date('5.27.2021 22:29').getTime();
 function addZeros(n, l) {
   return (
@@ -17,7 +17,7 @@ const timerInterval = setInterval(() => {
   const d = deadline - Date.now();
   if(d<0) {
     time.textContent = 'Ваня го катку!!!1!1'
-    subtext.textContent='';
+    title.textContent='';
     return clearInterval(timerInterval);
   }
   const days = addZeros(Math.floor(d / 86400000), 3);
