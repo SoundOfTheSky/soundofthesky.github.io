@@ -1,24 +1,27 @@
 module.exports = {
-  //parser: "babel-eslint",
+  root: true,
   extends: [
-    "eslint:recommended",
-    //"plugin:react/recommended",
-    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
-  plugins: ["html" /*, "react"*/],
-  env: { browser: true, node: true, es2020: true },
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
-    //jsx: true,
-  },
-  settings: {
-    /*react: {
-      version: "detect",
-    },*/
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   rules: {
-    "no-unused-vars": 1,
+    "prefer-const": 1,
     "prettier/prettier": 1,
+    "@typescript-eslint/explicit-module-boundary-types": 0
   },
-};
+  parser: "@typescript-eslint/parser",
+  settings: {
+    react: {
+      version: "detect"
+    }
+  }
+}

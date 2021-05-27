@@ -1,15 +1,21 @@
 {
-  "name": "SoundOfTheSky.github.io",
+  "name": "a",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/SoundOfTheSky/soundofthesky.github.io.git",
-  "author": "SoundOfTheSky <tkachiov.2000@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.7.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-html": "^6.0.3",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5"
+    "prettier": "latest",
+    "eslint": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-config-prettier": "latest",
+    "stylelint": "latest",
+    "stylelint-config-rational-order": "latest",
+    "stylelint-config-standard": "latest",
+    "stylelint-order": "latest",
+    "stylelint-prettier": "latest",
+    "stylelint-config-prettier": "latest"
+  },
+  "scripts": {
+    "lint": "prettier -c \"**/*.json\" && eslint \"src/**/*{.js,.jsx,.ts,.tsx}\" && stylelint \"src/**/*{.css,.scss}\"",
+    "lint:fix": "prettier -w \"**/*.json\" && eslint \"src/**/*{.js,.jsx,.ts,.tsx}\" --fix && stylelint \"src/**/*{.css,.scss}\" --fix"
   }
 }
