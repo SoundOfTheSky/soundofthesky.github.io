@@ -4,7 +4,7 @@ const title= document.querySelector('.title');
 const a = document.querySelector('.a');
 veigar.style.bottom = '0px';
 veigar.style.left = '10px';
-const deadline = new Date('6.1.2020').getTime();
+const deadline = new Date('6.1.2021').getTime();
 //const deadline = new Date('5.27.2021 22:29').getTime();
 function addZeros(n, l) {
   return (
